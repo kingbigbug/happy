@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swiper中文网基础演示(www.swiper.com.cn)</title>
+<link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+<link rel="stylesheet" href="css/animate.css">
+
+
+<!--Swiper3.0.4-->
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+html,body{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  font-size:20px;
+  position:relative;
+}
+.swiper-container,.swiper-wrapper,.swiper-slide,img{
+      width: 100%;height: 100%; 
+      color:#fff;
+      
+    }
+.blue-slide {
+	background: #4390EE;
+  
+}
+.red-slide {
+	background: #CA4040;
+}
+.orange-slide {
+	background: #FF8604;
+}
+.green-slide {
+  background: green;
+  
+}
+.swiper-container{
+  position:relative;
+  overflow:hidden;
+}
+.swiper-slide1 h2{
+  position:absolute;
+  left:20px;
+  top:50%;
+}
+.swiper-slide1 p{
+  position:absolute;
+   left:20px;
+    top:60%;
+}
+.swiper-slide2 h2{
+  position:absolute;
+  left:20px;
+  top:50%;
+}
+.swiper-slide2 p{
+  position:absolute;
+   left:20px;
+    top:60%;
+}
+.swiper-slide3 h2{
+  position:absolute;
+  left:20px;
+  top:50%;
+}
+.swiper-slide3 p{
+  position:absolute;
+   left:20px;
+    top:60%;
+}
+.swiper-slide4 h2{
+  position:absolute;
+  left:20px;
+  top:20%;
+}
+.swiper-slide4 p{
+  position:absolute;
+   left:20px;
+    top:30%;
+}
+.swiper-slide5 h2{
+  position:absolute;
+  left:20px;
+  top:20%;
+}
+.swiper-slide5 p{
+  position:absolute;
+   left:20px;
+    top:30%;
+}
+.swiper-slide6 h2{
+  position:absolute;
+  left:20px;
+  top:50%;
+}
+.swiper-slide6 p{
+  position:absolute;
+   left:20px;
+    top:60%;
+}
+.swiper-slide7 h2{
+  position:absolute;
+  left:20px;
+  top:50%;
+}
+.swiper-slide7 p{
+  position:absolute;
+   left:20px;
+    top:60%;
+}
+.swiper-slide8 h2{
+  position:absolute;
+  left:20px;
+  top:50%;
+}
+.swiper-slide8 p{
+  position:absolute;
+   left:20px;
+    top:60%;
+}
+.play{
+  position:absolute;
+  top:1.25rem;
+  right:1rem;
+  width:55px;
+  height:55px; 
+  
+}
+.hahah{
+  animation:zhuan2  2s linear infinite;
+}
+@keyframes zhuan2{
+  from{transform:rotateZ(0);}
+  to{transform:rotateZ(360deg);}
+}
+.play input{
+  width:55px;
+  height:55px;
+  background:url(img/units-icons.png) no-repeat ;
+  border:none;
+  outline:none;
+}
+.xiahu{
+  background:url(img/units-icons.png) no-repeat -55px 0;
+  width:55px;
+  height:55px;
+  bottom:20px;
+  position:absolute;
+  left:50%;
+  margin-left:-27.5px;
+  animation:xiahu 2s ease-in-out infinite;
+
+}
+@keyframes  xiahu {
+    0%{ top:90%;
+          opacity:0;       
+    }
+     50%{  top:88%;
+          opacity:1; }
+     100%{
+          top:87%;
+           opacity:0;
+     }     
+ }
+ .swiper-pagination{
+    text-align:right;
+    font-size:20px;
+ }
+</style>
+</head>
+<body>
+<div class="swiper-container">
+   
+    <div class="swiper-wrapper">
+    <audio id="aud">
+        <source id="hah" src="audio/庄心妍 - 走着走着就散了.mp3"></source>
+    </audio>  
+    </canvas>
+    <div class="swiper-slide blue-slide swiper-slide1">
+          <img src="img/eb492e1a-1c61-4945-ba74-031c29863f16.jpg">
+          <h2 class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">幸福</h2>
+          <p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">不是你开多豪华的车,<br/>而是你可以开着车平安回家</p>    
+    </div>
+    <div class="swiper-slide red-slide swiper-slide2">
+          <img src="img/0144bc8d-58ec-46aa-a04f-64877526a3c3.jpg">
+          <h2 class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">幸福</h2>
+          <p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">不是你存了多少钱,而是天天<br/>身心自由，不停地干自己喜欢<br/>
+          的事</p>
+   </div>
+
+    <div class="swiper-slide orange-slide swiper-slide3">
+          <img src="img/33f642ed-4a35-4ee0-8b66-137f686ded7c.jpg">
+          <h2 class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">幸福</h2>
+          <p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">不是你的爱人有多漂亮,<br/>而是你的爱人笑的多灿烂。</p>
+    </div>
+
+    <div class="swiper-slide green-slide swiper-slide4">
+          <img src="img/2ff405ba-8b95-42fb-a123-b3e78513ca4f.jpg">slider4
+          <h2 class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">幸福</h2>
+          <p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">不是吃得好穿得好,<br/>而是没病没灾。</p>
+    </div>
+
+    <div class="swiper-slide blue-slide swiper-slide5">
+          <img src="img/99c9ba0e-d42c-4040-89c4-7aa11c495c5a.jpg">
+          <h2 class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">幸福</h2>
+          <p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">不是在你成功时喝彩多热烈,而<br/>是失意时有个声音对你说:亲爱
+          的,加油！</p>
+    </div>
+
+    <div class="swiper-slide red-slide swiper-slide6">
+          <img src="img/dfad6710-ef01-43c6-80d6-2f63e029b8fe.jpg">
+          <h2 class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">幸福</h2>
+          <p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">不是你听过多少甜言蜜语,而<br/>
+          是你伤心落泪时有人对你说:
+          没事,有我在。</p>
+    </div>
+
+    <div class="swiper-slide orange-slide swiper-slide7">
+          <img src="img/7db46de9-3e80-4ea0-a546-5e9297ee6fe6.jpg">
+          <h2 class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">幸福</h2>
+          <p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">并不是房子有多大<br/>
+          而是房子传出来的笑声有多甜。</p>
+    </div>
+
+    <div class="swiper-slide green-slide swiper-slide8">
+          <img src="img/15aac101-4d89-4fea-bc4c-ff32109bd341.jpg">
+          <h2 class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">幸福</h2>
+          <p class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+          不是你能走的多远,而是无论<br/>
+          走到哪里,有个人会一直陪着你走</p>
+    </div>
+   
+  </div>
+   <div class="swiper-pagination"></div>
+   <div class="play hahah" style="z-index:2000">
+        <input type="button" value=""/>
+  </div>
+   <div class="xiahu" style="z-index:2000"></div>
+   
+</div>
+
+<script src="js/swiper-3.3.1.min.js"></script>
+<script src="js/swiper.animate1.0.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript">
+
+
+  var aud=document.getElementById('aud')
+  var btn=document.getElementsByTagName('input')
+          aud.play()
+        btn[0].onclick=function(){
+        if(aud.paused){
+         $(".play").addClass("hahah")
+          aud.play()
+        }else{
+          aud.pause()
+         $(".play").removeClass("hahah")
+        }
+      }
+  var mySwiper = new Swiper('.swiper-container',{
+      loop:true,
+	   //autoplay: 3000,
+      pagination: '.swiper-pagination',
+	    direction: "vertical",
+      paginationType : 'fraction',
+      onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+          swiperAnimateCache(swiper); //隐藏动画元素 
+          swiperAnimate(swiper); //初始化完成开始动画
+      }, 
+      onSlideChangeEnd: function(swiper){ 
+          swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+      } ,
+      paginationFractionRender: function (swiper, currentClassName, totalClassName) {
+      return '<span class="' + currentClassName + '"></span>'+' / '+'<span class="' + totalClassName + '"></span>';
+      }
+  });
+    /*var my2Swiper = new Swiper('.swiper-container',{
+          pagination: '.swiper-pagination',
+          paginationType : 'progress'
+    })*/
+
+
+
+
+      
+     
+</script>
+</body>
+</html>
